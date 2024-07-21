@@ -19,7 +19,6 @@ export default {
           "primary": "#202020",
           "secondary": '#8830EA',
           ".btn": {
-            "border": 'none',
             "background-color": '#202020'
           },
           ".btn:hover": {
