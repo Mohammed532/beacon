@@ -8,7 +8,7 @@ function App() {
     <>
       <Header text='BEACON' />
       <Home/>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
