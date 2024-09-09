@@ -24,11 +24,14 @@ function Preview() {
             </div>
             {/* WIDGET MODAL */}
             <Modal id={'widget_modal'}>
+                <>
+                <h2>Add Widget</h2>
                 <ul>
                 {widgetList.map((w, idx) => (
-                    <li key={`widlsit-${idx}`}>{w}</li>
+                    <li key={`widlsit-${idx}`} className='text-left hover:bg-secondary'>{w}</li>
                 ))}
                 </ul>
+                </>
             </Modal>
             <div className="place-self-stretch flex flex-row">
                 <p className="text-left basis-1/2">Preview</p>

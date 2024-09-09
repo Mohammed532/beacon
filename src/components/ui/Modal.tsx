@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 
 interface ChildrenProp extends React.JSX.Element {
     next?: React.JSX.Element
@@ -12,11 +12,18 @@ type ModalProp = {
 
 // TODO: fix visual modal bug
 function Modal({ children, id, action }: ModalProp) {
+
+    function nextMPage(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+        console.log(e.target);
+        
+    }
+
     return(
         <>
             <dialog id={id} className="modal bg-primary">
                 {action ? (
-                <div className="modal-box bg-primary">
+                <div className="modal-box bg-primary" onMouseOver={(e) => {console.log('hit');
+                }}> 
                     {children}
                     <div className="modal-action">
                         <form method="dialog">
